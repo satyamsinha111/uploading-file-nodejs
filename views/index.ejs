@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node file upload</title>
+</head>
+<body>
+    <%= typeof(msg)!='undefined'?msg:'' %> 
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file"  name="upload_file" id="file">
+        <button type="submit">submit</button>
+        <br>
+        <img src="<%= typeof(file)!='undefined'?file:'' %>" alt="" srcset="">
+    </form>
+</body>
+</html>
